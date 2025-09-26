@@ -36,21 +36,21 @@ Key Statistics:
 •	Columns:  
  o	Demographics:   
   	Age (numerical, range: ~13–64) .
-  	Gender (categorical: Male, Female, Other → later label/one-hot encoded).
- o	Digital Usage Features (numerical/continuous, in hours):
-  	daily_screen_time_hours (e.g., 0.1 – 12.2).
-  	phone_usage_hours.
-  	laptop_usage_hours.
-  	tablet_usage_hours.
-  	tv_usage_hours.
-  	social_media_hours.
-  	work_related_hours.
- o	Target Variable:
-  	stress_level (categorical: e.g., Low, Medium, High).
-  	Encoded versions (label-encoded integers and one-hot encoded stress categories) are created      for model training.
- •	Data Types:
-   •	Numerical (float values for screen/device usage, integer for age).
-   •	Categorical (gender, stress level → encoded).
+  	Gender (categorical: Male, Female, Other → later label/one-hot encoded).  
+ o	Digital Usage Features (numerical/continuous, in hours):  
+    	daily_screen_time_hours (e.g., 0.1 – 12.2).  
+    	phone_usage_hours.  
+    	laptop_usage_hours.  
+    	tablet_usage_hours.  
+    	tv_usage_hours.  
+    	social_media_hours.  
+    	work_related_hours.  
+ o	Target Variable:  
+    	stress_level (categorical: e.g., Low, Medium, High).    
+    	Encoded versions (label-encoded integers and one-hot encoded stress categories) are created      for model training.  
+ •	Data Types:  
+     •	Numerical (float values for screen/device usage, integer for age).
+     •	Categorical (gender, stress level → encoded).
 
 Challenges:
 •	Imbalanced classes: Some stress categories dominate (e.g., "Medium"), while others ("High") are underrepresented.
