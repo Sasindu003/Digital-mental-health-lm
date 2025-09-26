@@ -1,11 +1,17 @@
 # **AI-based Stress Level Prediction from Digital Device Usage**
 
 2025-Y2-S1-MLB-B5G2-01
+
 IT24101066	Nethmika N.G.D
+
 IT24100928	Nilame D.V.P.B.D
+
 IT24100926	Pathirana E.P.D.N
+
 IT24101068	Digoarachchi S.A
+
 IT24100945	Liyanage S.L.U
+
 IT24101005	Weerasena H.P.P.R.
 
 Overview of the Project
