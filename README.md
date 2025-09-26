@@ -19,23 +19,23 @@ Overview of the Project
 This project focuses on AI-based Stress Level Prediction from Digital Device Usage, aiming to predict an individual’s stress level based on their interaction with digital devices such as phones, laptops, tablets, and televisions. The dataset captures daily screen time, device usage patterns, and demographic factors like age and gender.
 The goal is to build a predictive machine learning model that can classify or estimate stress levels, providing insights into how digital lifestyle and screen exposure contribute to mental health outcomes.
 
-Key stages of the project include:
+Key stages of the project include:  
 •	Data Cleaning and Preprocessing: Handling missing values, outliers, and categorical encodings.  
 •	Feature Engineering: Constructing new derived features such as total screen time or social-to-work usage ratios.  
 •	Feature Selection: Identifying relevant predictors through statistical tests and variance analysis.  
-•	Standardization and Data Balancing: Scaling numerical features and applying techniques to handle imbalanced stress classes.
-•	Pipeline Integration: Organizing the workflow for reproducibility and model readiness.
+•	Standardization and Data Balancing: Scaling numerical features and applying techniques to handle imbalanced stress classes.  
+•	Pipeline Integration: Organizing the workflow for reproducibility and model readiness.  
 
-Dataset Details
-The dataset is named Digital Diet Mental Health (originally collected as digital_diet_mental_health.csv). It captures demographic information (such as age and gender) and detailed digital device usage patterns (daily screen time, phone, laptop, tablet, and TV hours, as well as social media and work-related usage). The dataset is designed for educational and research purposes, focusing on how patterns of technology consumption correlate with mental well-being and stress levels.
+Dataset Details  
+The dataset is named Digital Diet Mental Health (originally collected as digital_diet_mental_health.csv). It captures demographic information (such as age and gender) and detailed digital device usage patterns (daily screen time, phone, laptop, tablet, and TV hours, as well as social media and work-related usage). The dataset is designed for educational and research purposes, focusing on how patterns of technology consumption correlate with mental well-being and stress levels.  
 
 
 
-Key Statistics:
-•	Shape: Approximately 1000 rows and 8–10 columns (after preprocessing).
-•	Columns:
- o	Demographics:
-  	Age (numerical, range: ~13–64).
+Key Statistics:   
+•	Shape: Approximately 1000 rows and 8–10 columns (after preprocessing).  
+•	Columns:  
+ o	Demographics:   
+  	Age (numerical, range: ~13–64) .
   	Gender (categorical: Male, Female, Other → later label/one-hot encoded).
  o	Digital Usage Features (numerical/continuous, in hours):
   	daily_screen_time_hours (e.g., 0.1 – 12.2).
