@@ -52,49 +52,55 @@ Key Statistics:
      •	Numerical (float values for screen/device usage, integer for age).
      •	Categorical (gender, stress level → encoded).
 
-Challenges:
-•	Imbalanced classes: Some stress categories dominate (e.g., "Medium"), while others ("High") are underrepresented.
-•	Missing Values: Handled by imputation (mean for continuous, mode for categorical).
-•	Outliers: Removed using IQR method (extreme screen times beyond realistic limits).
-•	Encoding: Applied Label Encoding (for gender, stress level) and One-Hot Encoding (for categorical targets).
-•	Scaling: Standardization (z-score) applied to numerical features.
-•	Feature Selection: Low-variance features and highly correlated features were removed to improve model quality.
+Challenges:  
+•	Imbalanced classes: Some stress categories dominate (e.g., "Medium"), while others ("High") are underrepresented.  
+•	Missing Values: Handled by imputation (mean for continuous, mode for categorical).  
+•	Outliers: Removed using IQR method (extreme screen times beyond realistic limits).  
+•	Encoding: Applied Label Encoding (for gender, stress level) and One-Hot Encoding (for categorical targets).  
+•	Scaling: Standardization (z-score) applied to numerical features.  
+•	Feature Selection: Low-variance features and highly correlated features were removed to improve model quality.  
 
-Preprocessing Steps
-1.	Handling Missing Data and Encoding
-•	Identified and imputed missing values.
-•	Encoded categorical features such as gender into numeric form.
-2.	Outlier Detection
-•	Used the IQR method to detect extreme outliers in usage hours.
-•	Outliers removed to reduce skewness in distributions.
-3.	Feature Engineering
-•	Created aggregated features like total_screen_time and work_vs_social_ratio.
-•	Normalized device usage values relative to daily screen time.
-4.	Feature Selection
-•	Applied variance threshold to drop low-variance features.
-•	Used correlation analysis and statistical tests to select relevant predictors.
-5.	Standardization
-•	StandardScaler applied to all continuous features to normalize ranges.
-6.	Data Balancing
-•	Detected imbalance in stress level classes.
-•	Balanced using SMOTE and oversampling to ensure fair model training.
+Preprocessing Steps  
+1.	Handling Missing Data and Encoding  
+•	Identified and imputed missing values.  
+•	Encoded categorical features such as gender into numeric form.  
+2.	Outlier Detection  
+•	Used the IQR method to detect extreme outliers in usage hours.  
+•	Outliers removed to reduce skewness in distributions.  
+3.	Feature Engineering  
+•	Created aggregated features like total_screen_time and work_vs_social_ratio.  
+•	Normalized device usage values relative to daily screen time.  
+4.	Feature Selection  
+•	Applied variance threshold to drop low-variance features.  
+•	Used correlation analysis and statistical tests to select relevant predictors.  
+5.	Standardization  
+•	StandardScaler applied to all continuous features to normalize ranges.  
+6.	Data Balancing  
+•	Detected imbalance in stress level classes.  
+•	Balanced using SMOTE and oversampling to ensure fair model training.  
 
-Group Member Roles
-•	IT24100926: Responsible for Standerdization Scaling. Applied scaling to normalize continuous features and visualized distributions with box plots before and after scaling.
-•	IT24101005: Focused on Variance Threshold Feature Selection. Removed lowvariance features (threshold=0.0) to eliminate redundant columns.
+Group Member Roles  
+•	IT24100926: Responsible for Standerdization Scaling. Applied scaling to normalize continuous features and visualized distributions with box plots before and after scaling.    
+•	IT24101005: Managed Missing Values and Duplicate Removal. Handled missing data through imputation (mean/mode) and removed duplicate rows to ensure data consistency and integrity, improving model reliability.  
+•	IT24100945: Handled Encoding (one-hot encoding for multi-class features like gender and location_type), added creation of visualized bar plot for class distribution.  
+•	IT24100928: Dealt with Outlier Removal. Used IQR method to detect and remove outliers in continuous columns (e.g., Age, Temperature), reducing dataset size and providing before/after summaries.  
+•	IT24101068: Performed PCA for Dimensionality Reduction. Applied PCA to reduce the number of features while retaining most of the variance in the dataset. Visualized explained variance to assess the optimal number of components, improving model performance and reducing computational complexity.  
+•	IT24101066: Conducted Feature Selection using Recursive Feature Elimination (RFE). Identified and eliminated less important features by recursively removing the weakest features and using cross-validation to evaluate performance. Focused on improving model efficiency and reducing overfitting.  
 
-•	Group Pipeline (No Specific ID): Integrated all steps into a single pipeline notebook. This combines loading, cleaning, encoding, scaling, feature selection, and saving the final dataset. It uses tools like SimpleImputer for missing values and joblib for model persistence.
+ 
 
-How to Run the Code
-1.	Setup Environment
-•	Recommended: Google Colab or Jupyter Notebook.
-•	Install required libraries:
-•	pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
-2.	Running the Pipeline
-•	Upload digital_diet_mental_health.csv as input.
-•	Execute preprocessing notebooks in logical order:
-Missing Data → Outlier Detection → Encoding → Standardization → Feature Selection → Data Balancing.
-•	Final processed dataset saved as Done.csv.
-3.	Outputs
-•	Visualizations: Histograms, Boxplots, Correlation Heatmaps, Class Distribution.
-•	Final Dataset: Balanced and standardized data ready for machine learning model training.
+•	Group Pipeline (No Specific ID): Integrated all steps into a single pipeline notebook. This combines loading, cleaning, encoding, scaling, feature selection, and saving the final dataset. It uses tools like SimpleImputer for missing values and joblib for model persistence.  
+
+## How to Run the Code  
+1.	Setup Environment  
+•	Recommended: Google Colab or Jupyter Notebook.  
+•	Install required libraries:  
+•	pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn  
+2.	Running the Pipeline  
+•	Upload digital_diet_mental_health.csv as input.  
+•	Execute preprocessing notebooks in logical order:  
+Missing Data → Outlier Detection → Encoding → Standardization → Feature Selection → Data Balancing.  
+•	Final processed dataset saved as Done.csv.  
+3.	Outputs  
+•	Visualizations: Histograms, Boxplots, Correlation Heatmaps, Class Distribution.  
+•	Final Dataset: Balanced and standardized data ready for machine learning model training.  
