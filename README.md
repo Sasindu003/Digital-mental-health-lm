@@ -40,7 +40,7 @@ This cutting-edge project harnesses the power of **Artificial Intelligence** to 
 <td width="50%">
 
 ### 📈 **Dataset Statistics**
-- 📏 **Size:** ~1,000 rows × 10 columns
+- 📏 **Size:** ~2,000 rows × 25 columns
 - 🎯 **Target:** Stress Level Classification
 - 🌐 **Domain:** Digital Health & Well-being
 - 📱 **Focus:** Multi-device usage patterns
@@ -375,6 +375,6 @@ gitGraph
 
 ⭐ **Star this repository if it helped you!** ⭐
 
-*Made with ❤️ by the AI Stress Prediction Team*
+*Made with ❤️ by the SLIIT PGNO-91*
 
 </div>
