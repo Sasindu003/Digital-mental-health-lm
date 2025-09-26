@@ -1,4 +1,5 @@
-#AI-based Stress Level Prediction from Digital Device Usage
+**AI-based Stress Level Prediction from Digital Device Usage**
+
 2025-Y2-S1-MLB-B5G2-01
 IT24101066	Nethmika N.G.D
 IT24100928	Nilame D.V.P.B.D
