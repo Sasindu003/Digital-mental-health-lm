@@ -20,9 +20,9 @@ This project focuses on AI-based Stress Level Prediction from Digital Device Usa
 The goal is to build a predictive machine learning model that can classify or estimate stress levels, providing insights into how digital lifestyle and screen exposure contribute to mental health outcomes.
 
 Key stages of the project include:
-•	Data Cleaning and Preprocessing: Handling missing values, outliers, and categorical encodings.
-•	Feature Engineering: Constructing new derived features such as total screen time or social-to-work usage ratios.
-•	Feature Selection: Identifying relevant predictors through statistical tests and variance analysis.
+•	Data Cleaning and Preprocessing: Handling missing values, outliers, and categorical encodings.  
+•	Feature Engineering: Constructing new derived features such as total screen time or social-to-work usage ratios.  
+•	Feature Selection: Identifying relevant predictors through statistical tests and variance analysis.  
 •	Standardization and Data Balancing: Scaling numerical features and applying techniques to handle imbalanced stress classes.
 •	Pipeline Integration: Organizing the workflow for reproducibility and model readiness.
 
