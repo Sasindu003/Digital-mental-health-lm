@@ -165,7 +165,7 @@ flowchart TD
 
 ## 📁 Project Architecture
 
-<div align="center">
+<div align="left">
 
 ```
 🏗️ ai-stress-prediction/
