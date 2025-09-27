@@ -171,8 +171,9 @@ flowchart TD
 🏗️ ai-stress-prediction/
 ├── 📂 data/                           # 💾 Dataset Storage
 │   ├── 📊 digital_diet_mental_health.csv
+|   |
 │   └── ✅ processed_dataset.csv
-│
+│   |
 ├── 📂 notebooks/                      # 📓 Analysis Notebooks  
 │   ├── 🧹 01_data_cleaning.ipynb
 │   ├── 🔍 02_outlier_detection.ipynb  
