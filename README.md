@@ -169,20 +169,28 @@ flowchart TD
 
 ```
 🏗️ ai-stress-prediction/
-├── 📂 data/
+├── 📂 data/                          # 💾 Dataset Storage
 │   ├── 📊 digital_diet_mental_health.csv
-│   └── ✅ Done.csv
-├── 📓 notebooks/
-│   ├── 🧹 01_missing_data_handling.ipynb
+│   └── ✅ processed_dataset.csv
+├── 📂 notebooks/                     # 📓 Analysis Notebooks
+│   ├── 🧹 01_data_cleaning.ipynb
 │   ├── 🔍 02_outlier_detection.ipynb
-│   ├── 🔢 03_encoding.ipynb
-│   ├── 📏 04_standardization.ipynb
+│   ├── 🏷️ 03_encoding_analysis.ipynb
+│   ├── ⚖️ 04_standardization.ipynb
 │   ├── 🎯 05_feature_selection.ipynb
-│   └── ⚖️ 06_data_balancing.ipynb
-├── 🐍 src/
-│   └── ⚡ preprocessing_pipeline.py
-├── 🎨 visualizations/
-├── 📋 requirements.txt
+│   └── 📊 06_pca_transformation.ipynb
+├── 📂 src/                           # 🐍 Source Code
+│   ├── 🔧 preprocessing_pipeline.py
+│   ├── 📊 data_processor.py
+│   └── 🎯 feature_selector.py
+├── 📂 visualizations/                # 📈 Generated Plots
+│   ├── 📊 distribution_plots/
+│   ├── 🔥 correlation_heatmaps/
+│   └── 📈 pca_analysis/
+├── 📂 models/                        # 🤖 Saved Models
+├── 📂 reports/                       # 📋 Analysis Reports
+├── 🛠️ requirements.txt
+├── ⚙️ config.yaml
 └── 📖 README.md
 ```
 
