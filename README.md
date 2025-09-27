@@ -202,7 +202,7 @@ flowchart TD
 
 ### 🔧 **Prerequisites**
 
-<div align="center">
+<div align="left">
 
 ```bash
 # 🐍 Create virtual environment
