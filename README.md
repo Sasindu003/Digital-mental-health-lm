@@ -169,29 +169,29 @@ flowchart TD
 
 ```
 🏗️ ai-stress-prediction/
-├── 📂 data/                          # 💾 Dataset Storage
-│   ├── 📊 digital_diet_mental_health.csv
-│   └── ✅ processed_dataset.csv
-├── 📂 notebooks/                     # 📓 Analysis Notebooks  
-│   ├── 🧹 01_data_cleaning.ipynb
-│   ├── 🔍 02_outlier_detection.ipynb  
-│   ├── 🏷️ 03_encoding_analysis.ipynb
-│   ├── ⚖️ 04_standardization.ipynb
-│   ├── 🎯 05_feature_selection.ipynb
-│   └── 📊 06_pca_transformation.ipynb
-├── 📂 src/                           # 🐍 Source Code
-│   ├── 🔧 preprocessing_pipeline.py
-│   ├── 📊 data_processor.py
-│   └── 🎯 feature_selector.py
-├── 📂 visualizations/                # 📈 Generated Plots
-│   ├── 📊 distribution_plots/
-│   ├── 🔥 correlation_heatmaps/
-│   └── 📈 pca_analysis/
-├── 📂 models/                        # 🤖 Saved Models
-├── 📂 reports/                       # 📋 Analysis Reports
-├── 🛠️ requirements.txt
-├── ⚙️ config.yaml
-└── 📖 README.md
+├── 📂 data/                      # 💾 Dataset Storage
+│    ├── 📊 digital_diet_mental_health.csv
+│    └── ✅ processed_dataset.csv
+├──  📂 notebooks/                     # 📓 Analysis Notebooks  
+│    ├── 🧹 01_data_cleaning.ipynb
+│    ├── 🔍 02_outlier_detection.ipynb  
+│    ├── 🏷️ 03_encoding_analysis.ipynb
+│    ├── ⚖️ 04_standardization.ipynb
+│    ├── 🎯 05_feature_selection.ipynb
+│    └── 📊 06_pca_transformation.ipynb
+├──  📂 src/                           # 🐍 Source Code
+│    ├── 🔧 preprocessing_pipeline.py
+│    ├── 📊 data_processor.py
+│    └── 🎯 feature_selector.py
+├──  📂 visualizations/                # 📈 Generated Plots
+│    ├── 📊 distribution_plots/
+│    ├── 🔥 correlation_heatmaps/
+│    └── 📈 pca_analysis/
+├──  📂 models/                        # 🤖 Saved Models
+├──  📂 reports/                       # 📋 Analysis Reports
+├──  🛠️ requirements.txt
+├──  ⚙️ config.yaml
+└──  📖 README.md
 ```
 
 </div>
